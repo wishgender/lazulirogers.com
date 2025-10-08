@@ -6,7 +6,7 @@ const person: Person = {
   lastName: "Rogers",
   name: `Lazuli A. Rogers`,
   role: "Computer Programmer",
-  avatar: "/images/avatar.jpg",
+  avatar: "/images/avatar.png",
   email: "contact@lazulirogers.com",
   location: "US/Eastern", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Japanese"], // optional: Leave the array empty if you don't want to display languages
@@ -29,7 +29,7 @@ const social: Social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/lazuli-rogers",
   },
   {
     name: "Instagram",
@@ -49,7 +49,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Integrating passion for broadcast media with web design and programming</>,
   featured: {
     display: false,
     title: (
@@ -65,14 +65,8 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Selene, a design engineer at{" "}
-      <Logo
-        dark
-        icon="/trademarks/wordmark-dark.svg"
-        style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
-      />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Laz, a programmer and web manager at Black Squirrel Entertainment, where I keep the BSE website in top condition.
+      <br /> After hours, I build my own projects, from web apps to cosplays and lots in between.
     </>
   ),
 };
@@ -87,63 +81,58 @@ const about: About = {
     subItems: false,
   },
   avatar: {
-    display: false,
+    display: true,
   },
   calendar: {
     display: false,
     link: "https://cal.com",
   },
   intro: {
-    display: false,
+    display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Lazuli is an Ohio-based computer programmer and web designer with a love for nerdy things and broadcast media.
       </>
     ),
   },
   work: {
-    display: false, // set to false to hide this section
+    display: true, // set to false to hide this section
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Black Squirrel Entertainment",
+        timeframe: "August 2025 - Present",
+        role: "Web Manager",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Maintains the Black Squirrel Entertainment website and addresses any 
+            issues that may arise, from bugs in the code to ensuring accurate 
+            credits and new episodes are displayed in a timely manner.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/projects/bse-site/bse-home.png",
+            alt: "Black Squirrel Entertainment website",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "KardoAI",
+        timeframe: "Summer 2025",
+        role: "Software Development Intern",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Developed a backend API for collecting and returning contact information for
+            use with company marketing.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Took over frontend web app development after a fellow intern unexpectedly had
+            to leave early.
           </>,
         ],
         images: [],
@@ -151,16 +140,12 @@ const about: About = {
     ],
   },
   studies: {
-    display: false, // set to false to hide this section
+    display: true, // set to false to hide this section
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Kent State University",
+        description: <>Currently pursuing a Bachelor's Degree in Computer Science and minoring in Japanese</>,
       },
     ],
   },
@@ -169,36 +154,40 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "HTML/CSS",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Have worked with HTML/CSS for </>
         ),
         tags: [
           {
-            name: "Figma",
-            icon: "figma",
+            name: "HTML5",
+            icon: "html",
           },
+          {
+            name: "CSS3",
+            icon: "css"
+          }
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
+            src: "/images/projects/devSite/home.png",
+            alt: "My Development Site",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
+            src: "/images/projects/norseMyths/myths.png",
+            alt: "A Norse Mythology Project",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        title: "Next.js",
+        title: "React.js",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>Building web apps with React.js and SQL or MongoDB databases</>
         ),
         tags: [
           {
@@ -206,19 +195,23 @@ const about: About = {
             icon: "javascript",
           },
           {
-            name: "Next.js",
-            icon: "nextjs",
+            name: "React.js",
+            icon: "react",
           },
           {
-            name: "Supabase",
-            icon: "supabase",
+            name: "SQLite",
+            icon: "sqlite",
+          },
+          {
+            name: "MongoDB",
+            icon: "mongodb",
           },
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
+            src: "/images/projects/thisDay/thisDay.png",
+            alt: "This Day in Pokémon History",
             width: 16,
             height: 9,
           },
@@ -231,7 +224,7 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Sharing my thoughts on programming and broadcast media...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
@@ -297,4 +290,5 @@ const gallery: Gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+// export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, home, about, work, blog, newsletter };
