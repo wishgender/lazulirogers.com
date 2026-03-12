@@ -1,0 +1,43 @@
+---
+title: "BSE Website"
+publishedAt: "2025-09-27"
+summary: "The official website of Kent State Student Media's Black Squirrel Entertainment"
+images:
+  - "/images/projects/bse-site/bseSite1.webp"
+  - "/images/projects/bse-site/bseSite2.webp"
+  - "/images/projects/bse-site/bseSite3.webp"
+team:
+  - name: "Lazuli Rogers"
+    role: "Web Manager"
+    avatar: "/images/avatar.png"
+    linkedIn: "https://www.linkedin.com/in/lazuli-rogers/"
+link: "https://blacksquirrelentertainment.com"
+---
+
+## Overview
+
+Since August of 2025, I have been the Web Manager (or as I like to call it "Website Sovereign") for Kent State Student Media's Black Squirrel Entertainment. This involves routine maintenance, upgrades to the UI, database updates, and more. The website was built by my predecessor, [Darien Yoder](https://darienyoder.com).
+
+## Key Features
+
+- **Homepage**: On the landing page for this site, an image carousel displays randomly selected TV shows, radio shows, or podcasts. The odds change depending on how recently a show has been live, if it is currently live, and if there is any sort of big event happening soon (e.g., our annual charity livestream with Extra Life). Additionally, the most recent TV and Podcast episodes are listed below the carousel, with a list of our shows and podcasts below that.
+- **TV & Radio Livestreams**: Both our TV and radio livestreams run 24/7/365. The radio stream is made up of our weekly student-run radio shows with breaks in between each show where music is randomly selected from our music database to play. On the other hand, our TV shows run on Hilltop Productions' livestream (along with newscasts by KentStaterTV and sports programming by KSTV Sports), which is manually curated by their Head of Programming, so it is dynamically generated based on a database table containing the weekly schedule.
+- **TV & Radio Schedules**: Both the [radio](https://blacksquirrelentertainment.com/radio/schedule) and [TV](https://blacksquirrelentertainment.com/tv/schedule) schedules are available to view on the website. Airing times of new TV episodes are indicated.
+- **On-Demand Page**: All of the current BSE TV shows and many of the past ones can be viewed on the [On-Demand page](https://blacksquirrelentertainment.com/tv/shows). Each show, then, has its own page as well, most of which include episode lists by season, cast and crew lists, and social media links.
+- **Staff & Showrunners Page**: Lists the Black Squirrel Entertainment leadership team for each semester, starting from Fall 2024. Semester can be selected from a dropdown menu at the top. 
+- **Podcast Update Script**: Darien created a script that updates our database with new episodes of BSE's podcast, though the script had many bugs when I began the job.
+
+## Technologies Used
+
+- **Back-end compilation**: The website runs on PHP that generates the HTML using an SQL database. Some parts of the site use WordPress, but much of it is PHP code, hand-written by either myself or Darien.
+- **PHP & MySQL**: HTML is generated using PHP and a MySQL relational database
+- **WordPress**: The site's dashboard uses WordPress to simplify usage for those who are not as tech-savvy as Darien and myself.
+
+## Challenges & Lessons Learned
+
+I was not very experienced with SQL or PHP when I began this job, but it has given me the opportunity to learn much about these technologies. Additionally, I tend to encounter frustration when trying to adjust formatting for all browsers and devices, but I always figure something out.
+
+## Outcome
+
+My proudest achievement in regard to this website is fixing Darien's podcast-fetching script to not only properly update all podcasts, but also to no longer require manual entry of new podcasts: now, new podcasts are simply scraped from the Black Squirrel Entertainment Podcast Network page on Podbean.
+

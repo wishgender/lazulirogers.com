@@ -77,7 +77,7 @@ const about: About = {
   title: `About – ${person.name}`,
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
-    display: false,
+    display: true,
     subItems: false,
   },
   avatar: {
@@ -102,24 +102,61 @@ const about: About = {
     experiences: [
       {
         company: "Black Squirrel Entertainment",
+        timeframe: "January 2026 - Present",
+        role: "TV Executive Producer",
+        achievements: [
+          <>
+            Oversee all five TV shows on Black Squirrel Entertainment, providing guidance and advice to showrunners
+          </>,
+          <>
+            Communicate and coordinate with other student media departments, especially Production & Film Distribution to ensure shows go as planned
+          </>
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+        ],
+      },
+      {
+        company: "Black Squirrel Entertainment",
         timeframe: "August 2025 - Present",
         role: "Web Manager",
         achievements: [
           <>
-            Maintains the Black Squirrel Entertainment website and addresses any 
-            issues that may arise, from bugs in the code to ensuring accurate 
+            Maintains the Black Squirrel Entertainment website and addresses any
+            issues that may arise, from bugs in the code to ensuring accurate
             credits and new episodes are displayed in a timely manner.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/bse-site/bse-home.png",
-            alt: "Black Squirrel Entertainment website",
-            width: 16,
-            height: 9,
-          },
         ],
+      },
+      {
+        company: "Kent State Student Media Production & Film Distribution",
+        timeframe: "August 2025 - Present",
+        role: "Newscast Director",
+        achievements: [
+          <>
+            Direct the Friday newscast during the Fall 2025 semester and the Monday newscast during the Spring 2026 semester
+          </>,
+          <>
+            Won the Golden Tape for Most Improved Show of the Fall 2025 semester
+          </>
+        ],
+        images: [
+          {
+            src: "/images/about/fridayNewscast.webp",
+            alt: "Crew of the Fall 2025 KSTV Friday Newscast",
+            width: 16,
+            height: 9
+          },
+          {
+            src: "/images/about/mostImprovedShow.webp",
+            alt: "Lazuli Rogers holding the Golden Tape award for Most Improved Show",
+            width: 9,
+            height: 9
+          }
+        ]
       },
       {
         company: "KardoAI",
@@ -135,7 +172,9 @@ const about: About = {
             to leave early.
           </>,
         ],
-        images: [],
+        images: [
+
+        ],
       },
     ],
   },
@@ -145,18 +184,24 @@ const about: About = {
     institutions: [
       {
         name: "Kent State University",
+        timeframe: "Fall 2022 - Present",
         description: <>Currently pursuing a Bachelor's Degree in Computer Science and minoring in Japanese</>,
       },
+      {
+        name: "Shaker Heights High School",
+        timeframe: "Fall 2021 - Spring 2022",
+        description: <>High school diploma from Shaker Heights High School (Class of 2022)</>
+      }
     ],
   },
   technical: {
-    display: false, // set to false to hide this section
+    display: true, // set to false to hide this section
     title: "Technical skills",
     skills: [
       {
         title: "HTML/CSS",
         description: (
-          <>Have worked with HTML/CSS for </>
+          <>Have worked with HTML/CSS for 3+ years</>
         ),
         tags: [
           {
@@ -171,13 +216,13 @@ const about: About = {
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/devSite/home.png",
+            src: "/images/projects/devSite/devSite1.webp",
             alt: "My Development Site",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/projects/norseMyths/myths.png",
+            src: "/images/projects/norseMyths/myths.webp",
             alt: "A Norse Mythology Project",
             width: 16,
             height: 9,
@@ -210,13 +255,19 @@ const about: About = {
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/thisDay/thisDay.png",
+            src: "/images/projects/thisDay/thisDay1.webp",
             alt: "This Day in Pokémon History",
             width: 16,
             height: 9,
           },
+          {
+            src: "/images/projects/sleep/sleep1.webp",
+            alt: "Mareep Counter",
+            width: 16,
+            height: 9,
+          }
         ],
-      },  
+      },
     ],
   },
 };
