@@ -6,7 +6,7 @@ const person: Person = {
   lastName: "Rogers",
   name: `Lazuli A. Rogers`,
   role: "Computer Programmer",
-  avatar: "/images/avatar.png",
+  avatar: "/images/avatar.webp",
   email: "contact@lazulirogers.com",
   location: "US/Eastern", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Japanese"], // optional: Leave the array empty if you don't want to display languages
@@ -45,7 +45,7 @@ const social: Social = [
 
 const home: Home = {
   path: "/",
-  image: "/images/og/home.jpg",
+  image: "/images/og/home.webp",
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
@@ -295,9 +295,13 @@ const gallery: Gallery = {
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
   // These are placeholder images, replace with your own
   images: [
+    { src: "/images/gallery/fridayNewsCrew.webp", alt: "Fall 2025 KSTV Friday Newscast crew; from left to right, Morgan Hall (filled in for audio), Maria Nelson (tech manager), Lynne Wheatley (Video Playback), Lazuli Rogers (Director), Drew Pike (Floor Crew), Ben Lanter (Floor Crew), Jillian Arthur (Technical Director), Sara Mitchell (CG)", orientation: "horizontal" },
+    { src: "/images/gallery/bestHosts.webp", alt: "Lazuli Rogers & Cassandra Switzer won the Fall 2025 Black Squirrel Entertainment Golden Tapes for Best Hosts", orientation: "horizontal" },
+    { src: "/images/gallery/blurbGrabBag.webp", alt: "Lazuli Rogers pictured with the participants in a crossover discussion panel between The Blurb and Grab Bag", orientation: "horizontal" },
+    { src: "/images/gallery/mostImprovedShow.webp", alt: "Lazuli Rogers pictured with the Production & Film Distribution Golden Tape for Most Improved Show", orientation: "vertical" },
+    { src: "/images/gallery/presentingWebStats.webp", alt: "Lazuli Rogers presenting the web analytics of the Black Squirrel Entertainment website at the Fall 2025 end-of-semester banquet", orientation: "vertical" },
   ],
 };
 
