@@ -28,6 +28,8 @@ import {
   SiSupabase,
   SiSqlite,
   SiMongodb,
+  SiWordpress,
+  SiPhp
 } from "react-icons/si";
 
 import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, FaInstagram, FaHtml5, FaCss3, FaReact } from "react-icons/fa6";
@@ -69,7 +71,9 @@ export const iconLibrary: Record<string, IconType> = {
   css: FaCss3,
   react: FaReact,
   sqlite: SiSqlite,
-  mongoDB: SiMongodb
+  mongoDB: SiMongodb,
+  wordpress: SiWordpress,
+  php: SiPhp,
 };
 
 export type IconLibrary = typeof iconLibrary;

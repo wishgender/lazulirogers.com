@@ -92,7 +92,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Lazuli is an Ohio-based computer programmer and web designer with a love for nerdy things and broadcast media.
+        Lazuli is an Ohio-based computer programmer and web developer with a love for nerdy things and broadcast media.
       </>
     ),
   },
@@ -102,7 +102,7 @@ const about: About = {
     experiences: [
       {
         company: "Black Squirrel Entertainment",
-        timeframe: "January 2026 - Present",
+        timeframe: "January 2026 - May 2026",
         role: "TV Executive Producer",
         achievements: [
           <>
@@ -117,12 +117,12 @@ const about: About = {
         ],
       },
       {
-        company: "Black Squirrel Entertainment",
+        company: "Black Squirrel Entertainment & Black Squirrel Radio",
         timeframe: "August 2025 - Present",
         role: "Web Manager",
         achievements: [
           <>
-            Maintains the Black Squirrel Entertainment website and addresses any
+            Maintains the Black Squirrel Entertainment & Black Squirrel Radio websites and addresses any
             issues that may arise, from bugs in the code to ensuring accurate
             credits and new episodes are displayed in a timely manner.
           </>,
@@ -132,15 +132,15 @@ const about: About = {
         ],
       },
       {
-        company: "Kent State Student Media Production & Film Distribution",
+        company: "Hilltop Productions",
         timeframe: "August 2025 - Present",
         role: "Newscast Director",
         achievements: [
           <>
-            Direct the Friday newscast during the Fall 2025 semester and the Monday newscast during the Spring 2026 semester
+            Direct the Friday newscast during the Fall 2025 semester, the Monday newscast during the Spring 2026 semester, and the Friday newscast during the Fall 2026 semester.
           </>,
           <>
-            Won the Golden Tape for Most Improved Show of the Fall 2025 semester
+            Won the Golden Tape for Most Improved Show of the Fall 2025 semester and the Golden Tape for Best Newscast of the Spring 2026 semester.
           </>
         ],
         images: [
@@ -156,6 +156,14 @@ const about: About = {
             width: 9,
             height: 9
           }
+        ]
+      },
+      {
+        company: "Hilltop Productions",
+        timeframe: "August 2026 - Present",
+        role: "Head of Platform",
+        achievements: [
+          <>Maintain the 24/7 livestream schedule using Castus, Boxcast, & other technologies, as well as the video on-demand frontend and Roku channel.</>
         ]
       },
       {
@@ -183,9 +191,14 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "Kent State University",
-        timeframe: "Fall 2022 - Present",
-        description: <>Currently pursuing a Bachelor's Degree in Computer Science and minoring in Japanese</>,
+        name: "Kent State University College of Communication and Information",
+        timeframe: "Fall 2026 - present",
+        description: <>Currently pursuing a Master of Science in Emerging Media and Technology</>,
+      },
+      {
+        name: "Kent State University College of Arts and Sciences",
+        timeframe: "Fall 2022 - Summer 2026",
+        description: <>Bachelor's Degree in Computer Science, minor in Japanese</>,
       },
       {
         name: "Shaker Heights High School",
@@ -268,6 +281,23 @@ const about: About = {
           }
         ],
       },
+      {
+        title: "WordPress/PHP",
+        description: (
+          <>Building and maintaining websites using the WordPress CMS, as well as writing plugins and theme templates for use with WordPress sites</>
+        ),
+        tags: [
+          {
+            name: "WordPress",
+            icon: "wordpress"
+          },
+          {
+            name: "PHP",
+            icon: "php"
+          }
+        ],
+        images: []
+      }
     ],
   },
 };
