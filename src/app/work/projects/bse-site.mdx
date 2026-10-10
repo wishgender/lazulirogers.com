@@ -1,0 +1,41 @@
+---
+title: "BSE Website"
+publishedAt: "2026-10-10"
+summary: "The official website of Kent State Student Media's Black Squirrel Entertainment"
+images:
+  - "/images/projects/bse-site/bseHome1.webp"
+  - "/images/projects/bse-site/bseHome2.webp"
+  - "/images/projects/bse-site/bseStaff.webp"
+  - "/images/projects/bse-site/bseOnDemand1.webp"
+  - "/images/projects/bse-site/bseOnDemand2.webp"
+  - "/images/projects/bse-site/bseShowPage1.webp"
+  - "/images/projects/bse-site/bseShowPage2.webp"
+  - "/images/projects/bse-site/bseShowPage3.webp"
+team:
+  - name: "Lazuli Rogers"
+    role: "Web Manager"
+    avatar: "/images/avatar.webp"
+    linkedIn: "https://www.linkedin.com/in/lazuli-rogers/"
+link: "https://blacksquirrelentertainment.com"
+---
+
+## Overview
+
+At the start of the fall semester of 2026, I decided to update the BSE website to accomplish two main goals: (1) remove all unused content from when the site was shared with BSR, and (2) update the site to use the WordPress framework instead of working outside of it. The latter was especially important, as the plugins we had previously been using posed various security risks, and the site was overall very tough to understand, even as a programmer myself, meaning it would likely be extremely difficult for a future web manager without a background in computer science or web development to understand and efficiently perform their job. I determined that the best way to accomplish this would be through a custom post type plugin that clearly defined the data structures that we had been using before.
+
+## Key Features
+
+- **Homepage**: Using a shortcode I wrote for my plugin, lists the 30 most recently uploaded episodes, 30 random episodes, the currently active shows, and the archived shows
+- **On-Demand Page and Show Pages**: All of the current BSE TV shows and many of the past ones can be viewed on the [On-Demand page](https://blacksquirrelentertainment.com/shows). Each show, then, has its own page as well, most of which include episode lists by season, cast and crew lists, and social media links.
+- **Staff Page**: Lists the Black Squirrel Entertainment leadership team for each semester, starting from Fall 2024. Semester can be selected from a dropdown menu at the top. 
+- **Color Modes**: I added a light mode for accessibility purposes (though I am a dark mode user myself). The mode automatically changes to match the user's device settings.
+- **Responsive Design**: I worked hard to remove bugs in the initial, simple responsive design and to update it to best complement the changed format of the site
+
+## Technologies Used
+
+- **WordPress and PHP**: The site runs on WordPress, and thus most of the code for it is written in PHP.
+- **XAMPP server**: When testing my plugin for this site, I ran a local XAMPP server to avoid breaking the live site.
+
+## Challenges & Lessons Learned
+
+I had never written a WordPress plugin before this project, so there was certainly a learning curve with that. Additionally, when working to transform the site to be mobile-friendly and responsive, I had to parse a lot of poorly organized CSS and determine which parts were still needed.
